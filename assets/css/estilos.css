@@ -1,5 +1,5 @@
 body {
-  font-family: "Raleway", sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 /* Hero Section */
@@ -35,5 +35,17 @@ body {
   .navbar-brand{
     width: 100px;
   }
+}
 
+.fas {
+  /* Set initial color */
+  color: black;
+  /* Add transition effect */
+  transition: all 0.3s ease-in;
+}
+
+/* Add hover effect */
+.fas:hover {
+  /* Change color on hover */
+  color:darkseagreen;
 }
