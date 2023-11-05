@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="assets/favicon/logo.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
@@ -21,7 +22,7 @@
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
         <div class="container">
             <a class="navbar-brand" href="#">
-                <img src="assets/img/logo.png" class="img-fluid">
+                { Nombre: "MARCELO ANUCH" }
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -69,8 +70,7 @@
         <h2 class="display-3 fw-bold my-4">Acerca de mi</h2>
 
         <p class="my-4">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio quisquam distinctio, odit laborum aliquam
-            earum itaque cum sequi, dolorem optio vol
+            Soy Ingeniero Comercial con un MBA de la UDD. Me gusta emprender e innovar en procesos. Siempre he tenido el sueño de hacer un sistema para comercializarlo por lo que me decidí inscribirme en un BootCamp con Desafío Latam el cual llenaba mis espectativas con lo que deseaba estudiar respecto a nuevas tecnologías web.
         </p>
 
         <div class="container">
@@ -108,8 +108,8 @@
               <div class="card h-100">
                 <img src="/assets/img/card_1.jpg" class="card-img-top" alt="...">
                 <div class="card-body custom-font-5">
-                  <h5 class="card-title">Acceso al espacio Wellness para 1 o 2 personas con copa de cava y opción a masaje en Serena Spa Melia Princesa</h5>
-                  <p class="card-text custom-font-3"><small class="text-body-secondary">Serena Spa<br><i class="fa-solid fa-location-dot"></i> Calle de la Princesa, 27</small></p>
+                  <h5 class="card-title">Desafío 4</h5>
+                  <p class="card-text custom-font-3"><small class="text-body-secondary">Página de Cuppon donde se promocionan productos y servicios con descuentos especiales. Aquí se utilizo Bootstrap como Framework CSS.</small></p>
                 </div>
                 <div class="card-footer mx-2 bg-transparent">
                   <div class="text-end">
@@ -122,8 +122,8 @@
               <div class="card h-100">
                 <img src="/assets/img/card_2.jpg" class="card-img-top" alt="...">
                 <div class="card-body custom-font-5">
-                  <h5 class="card-title">Descuento por una semana al reservar un parking oficial</h5>
-                  <p class="card-text custom-font-3"><small class="text-body-secondary">Parking S.A.<br><i class="fa-solid fa-location-dot"></i> Los Carrera 820, Osorno</small></p>
+                  <h5 class="card-title">Desafío 3</h5>
+                  <p class="card-text custom-font-3"><small class="text-body-secondary">Iguana Page, es un desafío donde se utilzo HTML y CSS para la construcción de de una web separada por secciones.</small></p>
                 </div>
                 <div class="card-footer mx-2 bg-transparent">
                   <div class="text-end">
@@ -136,8 +136,8 @@
               <div class="card h-100">
                 <img src="/assets/img/card_3.jpg" class="card-img-top" alt="...">
                 <div class="card-body custom-font-5">
-                  <h5 class="card-title">Masaje corporal de 60 minutos a elegir</h5>
-                  <p class="card-text custom-font-3"><small class="text-body-secondary">Centro Estetica Biouty Zen<br><i class="fa-solid fa-location-dot"></i> Pedro Montt 1550, Puerto Varas</small></p>
+                  <h5 class="card-title">Desafío 2</h5>
+                  <p class="card-text custom-font-3"><small class="text-body-secondary">Landing 1 es un desafío básico donde se aprendió a incrustar CSS en su nivel más básico donde se resetearon variables CSS y se implementaron las propias.</small></p>
                 </div>
                 <div class="card-footer mx-2 bg-transparent">
                   <div class="text-end">
@@ -157,37 +157,24 @@
 
         <h2 class="display-4 fw-bold text-center my-4">Contáctame</h2>
 
-        <p class="text-center my-4 d-none d-md-block">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-            Doloribus
-            sapiente, autem delectus totam expedita
-            animi corporis dolorem qui magnam, aspernatur officiis quasi culpa tempora est commodi. Voluptate beatae
-            tempora quaerat?</p>
+        <p class="text-center my-4 d-none d-md-block">Si quieres dudas o consultas, no dudes en contactarme y pronto estaremos en contacto.</p>
 
-        <form>
-
-
-            <div class="form-group mb-4">
-                <label class="mb-2">Nombre</label>
-                <input class="form-control" placeholder="Nombre">
+        <form class="contact-form row">
+            <div class="form-field col x-50">
+                <input id="name" class="input-text js-input" type="text" required>
+                <label class="label" for="name">Nombre</label>
             </div>
-
-            <div class="form-group mb-4">
-                <label class="mb-2">Correo electrónico</label>
-                <input class="form-control" placeholder="Correo electrónico" />
+            <div class="form-field col x-50">
+                <input id="email" class="input-text js-input" type="email" required>
+                <label class="label" for="email">E-mail</label>
             </div>
-
-
-            <div class="form-group">
-                <label class="mb-2">Mensaje</label>
-                <textarea class="form-control" placeholder="Escribe aquí tu mensaje"></textarea>
+            <div class="form-field col x-100">
+                <input id="message" class="input-text js-input" type="text" required>
+                <label class="label" for="message">Mensaje</label>
             </div>
-
-            <div class="my-3 text-end">
-                <button class="btn btn-info text-light">Enviar</button>
+            <div class="form-field col x-100 align-center">
+                <input class="submit-btn" type="submit" value="Enviar">
             </div>
-
-
-
         </form>
 
     </section>
@@ -195,7 +182,7 @@
 
 
     <footer class="bg-dark text-center text-light p-4">
-        <p class="mb-0">Olivia Ros 2019. Todos los derechos reservados.</p>
+        <p class="mb-0">Marcelo Anuch 2023. Todos los derechos reservados.</p>
     </footer>
 
 
